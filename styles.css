@@ -74,3 +74,20 @@ h2{font-size:1.9rem;margin:0 0 .6em}
 .book p{margin:0;color:var(--muted)}
 .book .price{font-size:1.5rem;font-weight:700;color:var(--text);margin:12px 0 16px}
 .book .btn{margin-top:auto}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:8px}
+.service{background:var(--alt);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:flex-start}
+.service h3{font-size:1.5rem;line-height:1.25;margin:14px 0 8px}
+.service p{margin:0 0 14px;color:var(--muted)}
+.tag{background:var(--primary-dark);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.steps{list-style:none;counter-reset:s;padding:0;margin:4px 0 16px;display:grid;gap:12px;width:100%}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:center;background:var(--bg);border-radius:12px;padding:12px}
+.steps li::before{content:counter(s);grid-row:span 2;width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.steps strong{display:block}
+.steps span{color:var(--muted);font-size:.92rem}
+.topics-line{font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}
+.chips li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.92rem}
+.quote{font-style:italic;border-left:3px solid var(--primary);padding-left:12px}
+.service .price{font-size:1.8rem;font-weight:700;color:var(--text);margin:auto 0 16px;padding-top:8px}
+.service .price small{font-size:.9rem;font-weight:400;color:var(--muted)}
